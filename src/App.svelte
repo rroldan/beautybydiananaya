@@ -31,6 +31,10 @@
 </main>
 
 <style>
+:global(body){
+        background-color: lightseagreen;
+        background-image: src="/background.jpg";
+}
   .logo {
     height: 6em;
     padding: 1.5em;
