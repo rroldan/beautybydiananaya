@@ -1,3 +1,7 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -31,7 +35,7 @@ body {
   min-height: 100vh;
   background-image: url("background.jpg");
   background-image: no-repeat;
-  background-size: cover
+  background-size: cover;
 }
 
 h1 {
@@ -81,3 +85,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@tailwind components;
+
+@tailwind utilities;
