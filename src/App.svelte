@@ -10,7 +10,7 @@
   <div class="md:flex md:justify-between">
     <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <FooterLinkGroup>
-          <FooterLink liClass="mb-4" href="/">
+          <FooterLink liClass="mb-4" href="https://maps.app.goo.gl/VFxYX1VpwSuG3u8x6">
             <p class="mb-4 flex items-center justify-center md:justify-start">
             <svg
             xmlns="http://www.w3.org/2000/svg"
