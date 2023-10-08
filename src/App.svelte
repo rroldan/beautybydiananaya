@@ -1,17 +1,25 @@
 <script lang="ts">
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
-  import { Footer, FooterBrand, FooterCopyright, FooterIcon, FooterLink, FooterLinkGroup } from 'flowbite-svelte';
-  import { Section, Portfolio, PortfolioItem } from 'flowbite-svelte-blocks';
+  import { Footer, FooterLink, FooterLinkGroup } from 'flowbite-svelte';
+  import { Card } from 'flowbite-svelte';
+  import { Carousel } from 'flowbite-svelte';
+  export const images = [
+    {
+      src: '/carrusel-logo.jpg',
+      title: 'cosmic-timetraveler-pYyOZ8q7AII-unsplash.com',
+    }]
 </script>
 <maim>
 <div class="flex flex-col h-screen justify-between">
-  <header></header>
+  <header>
+    <Carousel {images} let:Controls>
+      <Controls />
+    </Carousel>
+  </header>
 <Footer>
-  <div class="md:flex md:justify-between">
-    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+  <div class="md:flex md:justify-end">
         <FooterLinkGroup>
           <FooterLink liClass="mb-4" href="https://maps.app.goo.gl/VFxYX1VpwSuG3u8x6">
-            <p class="mb-4 flex items-center justify-center md:justify-start">
+            <p class="mb-4 flex items-center justify-start md:justify-start">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -21,10 +29,10 @@
               d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
             <path
               d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
-          </svg> C/ Pan y Toros, 6 - Madrid</p>
+          </svg> Calle de Pan y Toros, 6, 28041, Madrid</p>
           </FooterLink>
           <FooterLink liClass="mb-4" href="/">
-            <p class="mb-4 flex items-center justify-center md:justify-start">
+            <p class="mb-4 flex items-center justify-start md:justify-start">
               <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -36,8 +44,8 @@
                 clip-rule="evenodd" />
             </svg> +34 626 38 41 41</p>
           </FooterLink>
-          <FooterLink liClass="mb-4" href="/">
-            <p class="mb-4 flex items-center justify-center md:justify-start">
+          <FooterLink liClass="mb-4" href="https://www.instagram.com/beauty_by_diananaya/">
+            <p class="mb-4 flex items-center justify-start md:justify-start">
               <svg
               xmlns="http://www.w3.org/2000/svg"
               class="mr-3 h-5 w-5"
@@ -49,7 +57,6 @@
           </FooterLink>
         </FooterLinkGroup>
       </div>
-  </div>
 </Footer>
 </div>
 </maim>
